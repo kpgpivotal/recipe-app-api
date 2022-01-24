@@ -3,4 +3,4 @@ exclude =
   migrations,
   __pycache__,
   manage.py,
-  sttings.py
+  settings.py
