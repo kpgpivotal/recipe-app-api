@@ -6,7 +6,7 @@ from django.test import TestCase
 
 class CommandTests(TestCase):
 
-    def test_for_db_ready_wait(self):
+    def test_wait_for_db_ready(self):
         """ Test waiting for DB when DB is available """
         with patch('django.db.utils.ConnectionHandler.__getitem__') as gi:
             gi.return_value = True
